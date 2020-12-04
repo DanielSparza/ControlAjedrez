@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace PresentacionAjedrez
 {
     class Program
     {
-        static void main()
+        static void Main()
         {
-            Application.Run(new FrmMenuPrincipal());
+            Application.Run(new FrmArbitro()); 
         }
     }
 }

@@ -1,0 +1,7 @@
+S:\Ejercicios de git\proyectoadministracionbd\ProyectoAjedrez\EntidadesAjedrez\obj\Debug\EntidadesAjedrez.csprojAssemblyReference.cache
+S:\Ejercicios de git\proyectoadministracionbd\ProyectoAjedrez\EntidadesAjedrez\obj\Debug\EntidadesAjedrez.csproj.CoreCompileInputs.cache
+S:\Ejercicios de git\proyectoadministracionbd\ProyectoAjedrez\EntidadesAjedrez\bin\Debug\EntidadesAjedrez.exe.config
+S:\Ejercicios de git\proyectoadministracionbd\ProyectoAjedrez\EntidadesAjedrez\bin\Debug\EntidadesAjedrez.exe
+S:\Ejercicios de git\proyectoadministracionbd\ProyectoAjedrez\EntidadesAjedrez\bin\Debug\EntidadesAjedrez.pdb
+S:\Ejercicios de git\proyectoadministracionbd\ProyectoAjedrez\EntidadesAjedrez\obj\Debug\EntidadesAjedrez.exe
+S:\Ejercicios de git\proyectoadministracionbd\ProyectoAjedrez\EntidadesAjedrez\obj\Debug\EntidadesAjedrez.pdb

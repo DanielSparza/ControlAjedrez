@@ -8,6 +8,6 @@ namespace AccesoADatosAjedrez
 {
     public class Program
     {
-        static void main() { }
+        static void Main() { }
     }
 }

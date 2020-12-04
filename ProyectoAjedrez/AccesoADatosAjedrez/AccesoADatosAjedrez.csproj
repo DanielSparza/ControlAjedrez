@@ -36,6 +36,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexionArbitro.cs" />
+    <Compile Include="ConexionCampeonato.cs" />
+    <Compile Include="ConexionPais.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -45,9 +48,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="BasesDeDatos">
-      <HintPath>..\..\..\..\BasesDeDatos\BasesDeDatos\bin\Debug\BasesDeDatos.dll</HintPath>
+    <Reference Include="Bases">
+      <HintPath>..\..\..\..\Documentos\Archivos guardados de Visual Studio\repos\Bases\Bases\bin\Debug\Bases.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

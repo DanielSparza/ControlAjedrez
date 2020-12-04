@@ -8,6 +8,6 @@ namespace EntidadesAjedrez
 {
     public class Program
     {
-        static void main() { }
+        static void Main() { }
     }
 }

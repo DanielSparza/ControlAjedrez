@@ -36,13 +36,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejadorArbitro.cs" />
+    <Compile Include="ManejadorCampeonato.cs" />
+    <Compile Include="ManejadorPais.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AccesoADatosAjedrez\AccesoADatosAjedrez.csproj">
+      <Project>{a64a384e-40f1-4ac2-b845-fb291cd785fe}</Project>
+      <Name>AccesoADatosAjedrez</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EntidadesAjedrez\EntidadesAjedrez.csproj">
       <Project>{92fa831f-746b-44e1-a7d2-8e6febc4da43}</Project>
       <Name>EntidadesAjedrez</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C6FA59D1-4FF9-4E9F-907D-0B5303B321D7}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>PresentacionAjedrez</RootNamespace>
     <AssemblyName>PresentacionAjedrez</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -32,15 +32,54 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmArbitro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArbitro.Designer.cs">
+      <DependentUpon>FrmArbitro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmArbitroAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArbitroAdd.Designer.cs">
+      <DependentUpon>FrmArbitroAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCampeonatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCampeonatos.Designer.cs">
+      <DependentUpon>FrmCampeonatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCampeonatosAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCampeonatosAdd.Designer.cs">
+      <DependentUpon>FrmCampeonatosAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMenuPrincipal.Designer.cs">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPais.Designer.cs">
+      <DependentUpon>FrmPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaisAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaisAdd.Designer.cs">
+      <DependentUpon>FrmPaisAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -57,8 +96,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmArbitro.resx">
+      <DependentUpon>FrmArbitro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmArbitroAdd.resx">
+      <DependentUpon>FrmArbitroAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCampeonatos.resx">
+      <DependentUpon>FrmCampeonatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCampeonatosAdd.resx">
+      <DependentUpon>FrmCampeonatosAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPais.resx">
+      <DependentUpon>FrmPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaisAdd.resx">
+      <DependentUpon>FrmPaisAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
