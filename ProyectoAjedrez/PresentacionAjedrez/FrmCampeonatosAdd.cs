@@ -69,6 +69,7 @@ namespace PresentacionAjedrez
                     MessageBox.Show("Registro añadido correctamente");
                     limpiarCuadros();
                     limpiarErrores();
+                    Close();
                 }
             }
             else if (!mc.validarVacio(txtIdCampeonato))

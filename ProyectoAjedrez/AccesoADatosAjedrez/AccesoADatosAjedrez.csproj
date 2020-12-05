@@ -37,8 +37,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionArbitro.cs" />
+    <Compile Include="ConexionBD.cs" />
     <Compile Include="ConexionCampeonato.cs" />
+    <Compile Include="ConexionHoteles.cs" />
     <Compile Include="ConexionPais.cs" />
+    <Compile Include="ConexionReservacion.cs" />
+    <Compile Include="ConexionSalas.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>

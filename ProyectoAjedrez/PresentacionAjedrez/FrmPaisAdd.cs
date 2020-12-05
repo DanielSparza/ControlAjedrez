@@ -48,6 +48,7 @@ namespace PresentacionAjedrez
                     guardarPais();
                     MessageBox.Show("Registro añadido correctamente");
                     limpiarErrores();
+                    Close();
                 }
             }
             else if (!mp.validarVacio(txtNombre))

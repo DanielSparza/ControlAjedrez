@@ -38,7 +38,10 @@
   <ItemGroup>
     <Compile Include="ManejadorArbitro.cs" />
     <Compile Include="ManejadorCampeonato.cs" />
+    <Compile Include="ManejadorHoteles.cs" />
     <Compile Include="ManejadorPais.cs" />
+    <Compile Include="ManejadorReservaciones.cs" />
+    <Compile Include="ManejadorSalas.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>

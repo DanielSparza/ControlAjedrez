@@ -11,7 +11,7 @@ namespace AccesoADatosAjedrez
 {
     public class ConexionArbitro
     {
-        Conectar c = new Conectar("localhost", "root", "", "ajedrez");
+        ConexionBD c = new ConexionBD();
 
         public string guardarArbitro(EntidadArbitro arbitro)
         {
@@ -47,13 +47,13 @@ namespace AccesoADatosAjedrez
 
         public DataSet mostrarArbitro(string busqueda)
         {
-            return c.Consultar(string.Format("select p.IdPersona as 'Código', p.Nombre, p.APaterno as 'Ap. Paterno', p.AMaterno as 'Ap. Materno', p.Direccion as Dirección, p.Telefono as Teléfono, c.Nombre as País from personas p, pais c where p.FkPais = c.IdPais and p.Nombre like '%{0}%'",
+            return c.Mostrar(string.Format("select p.IdPersona as 'Código', p.Nombre, p.APaterno as 'Ap. Paterno', p.AMaterno as 'Ap. Materno', p.Direccion as Dirección, p.Telefono as Teléfono, c.Nombre as País from personas p, pais c where p.FkPais = c.IdPais and p.Nombre like '%{0}%'",
                 busqueda), "personas");
         }
 
         public DataSet mostrarPais()
         {
-            return c.Consultar("select Nombre from pais", "pais");
+            return c.Mostrar("select Nombre from pais", "pais");
         }
 
         public int obtenerIdPais(string pais)
@@ -61,7 +61,7 @@ namespace AccesoADatosAjedrez
             try
             {
                 DataTable dt = new DataTable();
-                dt = c.Consultar(string.Format("select IdPais from pais where Nombre = '{0}'",
+                dt = c.Mostrar(string.Format("select IdPais from pais where Nombre = '{0}'",
                     pais), "pais").Tables[0];
 
                 DataRow r = dt.Rows[0];

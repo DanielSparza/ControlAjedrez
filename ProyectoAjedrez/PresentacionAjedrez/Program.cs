@@ -6,7 +6,7 @@ namespace PresentacionAjedrez
     {
         static void Main()
         {
-            Application.Run(new FrmArbitro()); 
+            Application.Run(new FrmReservaciones()); 
         }
     }
 }

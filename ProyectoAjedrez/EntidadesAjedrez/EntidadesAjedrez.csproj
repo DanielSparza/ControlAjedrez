@@ -37,8 +37,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntidadCampeonato.cs" />
+    <Compile Include="EntidadHoteles.cs" />
     <Compile Include="EntidadPais.cs" />
     <Compile Include="EntidadArbitro.cs" />
+    <Compile Include="EntidadReservacion.cs" />
+    <Compile Include="EntidadSalas.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

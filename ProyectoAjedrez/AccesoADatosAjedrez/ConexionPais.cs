@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EntidadesAjedrez;
+﻿using EntidadesAjedrez;
 using System.Data;
-using Bases;
 
 namespace AccesoADatosAjedrez
 {
     public class ConexionPais
     {
-        Conectar c = new Conectar("localhost", "root", "", "ajedrez");
+        ConexionBD c = new ConexionBD();
 
         public string guardarPais(EntidadPais pais)
         {
@@ -31,7 +25,7 @@ namespace AccesoADatosAjedrez
 
         public DataSet mostrarPais(string busqueda)
         {
-            return c.Consultar(string.Format("select IdPais as Id, Nombre as País, NClubes as 'No. Clubes' from pais where Nombre like '%{0}%'", busqueda), "pais");
+            return c.Mostrar(string.Format("select IdPais as Id, Nombre as País, NClubes as 'No. Clubes' from pais where Nombre like '%{0}%'", busqueda), "pais");
         }
     }
 }

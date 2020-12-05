@@ -39,6 +39,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.pbSalir = new System.Windows.Forms.PictureBox();
             this.panelTitulo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCampeonatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.panelTitulo.SuspendLayout();
@@ -52,9 +53,10 @@
             this.btnActuaizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActuaizar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActuaizar.ForeColor = System.Drawing.Color.White;
-            this.btnActuaizar.Location = new System.Drawing.Point(741, 263);
+            this.btnActuaizar.Location = new System.Drawing.Point(988, 305);
+            this.btnActuaizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActuaizar.Name = "btnActuaizar";
-            this.btnActuaizar.Size = new System.Drawing.Size(120, 40);
+            this.btnActuaizar.Size = new System.Drawing.Size(160, 49);
             this.btnActuaizar.TabIndex = 27;
             this.btnActuaizar.Text = "Actualizar";
             this.btnActuaizar.UseVisualStyleBackColor = false;
@@ -68,9 +70,10 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(741, 206);
+            this.btnNuevo.Location = new System.Drawing.Point(988, 235);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(120, 40);
+            this.btnNuevo.Size = new System.Drawing.Size(160, 49);
             this.btnNuevo.TabIndex = 26;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
@@ -102,14 +105,15 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgCampeonatos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgCampeonatos.GridColor = System.Drawing.Color.White;
-            this.dtgCampeonatos.Location = new System.Drawing.Point(12, 115);
+            this.dtgCampeonatos.Location = new System.Drawing.Point(16, 123);
+            this.dtgCampeonatos.Margin = new System.Windows.Forms.Padding(4);
             this.dtgCampeonatos.Name = "dtgCampeonatos";
             this.dtgCampeonatos.ReadOnly = true;
             this.dtgCampeonatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dtgCampeonatos.RowHeadersVisible = false;
             this.dtgCampeonatos.RowTemplate.Height = 24;
             this.dtgCampeonatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgCampeonatos.Size = new System.Drawing.Size(715, 369);
+            this.dtgCampeonatos.Size = new System.Drawing.Size(953, 411);
             this.dtgCampeonatos.TabIndex = 24;
             this.dtgCampeonatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCampeonatos_CellClick);
             // 
@@ -119,9 +123,10 @@
             this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBuscar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.ForeColor = System.Drawing.Color.Black;
-            this.txtBuscar.Location = new System.Drawing.Point(112, 66);
+            this.txtBuscar.Location = new System.Drawing.Point(149, 62);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(392, 29);
+            this.txtBuscar.Size = new System.Drawing.Size(522, 35);
             this.txtBuscar.TabIndex = 23;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
@@ -129,9 +134,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 70);
+            this.label2.Location = new System.Drawing.Point(16, 67);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 22);
+            this.label2.Size = new System.Drawing.Size(103, 29);
             this.label2.TabIndex = 22;
             this.label2.Text = "Nombre";
             // 
@@ -143,9 +149,10 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(741, 319);
+            this.btnEliminar.Location = new System.Drawing.Point(988, 374);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(120, 40);
+            this.btnEliminar.Size = new System.Drawing.Size(160, 49);
             this.btnEliminar.TabIndex = 21;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -155,9 +162,10 @@
             // 
             this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
-            this.pbSalir.Location = new System.Drawing.Point(829, 5);
+            this.pbSalir.Location = new System.Drawing.Point(1105, 6);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(4);
             this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(32, 32);
+            this.pbSalir.Size = new System.Drawing.Size(43, 39);
             this.pbSalir.TabIndex = 14;
             this.pbSalir.TabStop = false;
             this.pbSalir.Click += new System.EventHandler(this.pbSalir_Click);
@@ -165,19 +173,33 @@
             // panelTitulo
             // 
             this.panelTitulo.BackColor = System.Drawing.Color.Black;
+            this.panelTitulo.Controls.Add(this.label1);
             this.panelTitulo.Controls.Add(this.pbSalir);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(0, 0);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(873, 40);
+            this.panelTitulo.Size = new System.Drawing.Size(1164, 49);
             this.panelTitulo.TabIndex = 25;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(15, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 35);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Campionatos";
             // 
             // FrmCampeonatos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(873, 496);
+            this.ClientSize = new System.Drawing.Size(1164, 556);
             this.ControlBox = false;
             this.Controls.Add(this.btnActuaizar);
             this.Controls.Add(this.btnNuevo);
@@ -187,6 +209,7 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.panelTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCampeonatos";
@@ -196,6 +219,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgCampeonatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.panelTitulo.ResumeLayout(false);
+            this.panelTitulo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +235,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.PictureBox pbSalir;
         private System.Windows.Forms.Panel panelTitulo;
+        private System.Windows.Forms.Label label1;
     }
 }
