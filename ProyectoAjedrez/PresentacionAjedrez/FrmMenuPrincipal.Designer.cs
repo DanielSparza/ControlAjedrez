@@ -37,10 +37,11 @@
             this.optPaises = new System.Windows.Forms.ToolStripButton();
             this.optHoteles = new System.Windows.Forms.ToolStripButton();
             this.optRevervaciones = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.optSalas = new System.Windows.Forms.ToolStripButton();
             this.optPartidas = new System.Windows.Forms.ToolStripButton();
             this.optMovimientos = new System.Windows.Forms.ToolStripButton();
-            this.optCampionatos = new System.Windows.Forms.ToolStripButton();
+            this.optCampeonatos = new System.Windows.Forms.ToolStripButton();
+            this.btnSalir = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -76,10 +77,11 @@
             this.optPaises,
             this.optHoteles,
             this.optRevervaciones,
-            this.toolStripButton6,
+            this.optSalas,
             this.optPartidas,
             this.optMovimientos,
-            this.optCampionatos});
+            this.optCampeonatos,
+            this.btnSalir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 40);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1124, 71);
@@ -95,6 +97,7 @@
             this.optJugadores.Name = "optJugadores";
             this.optJugadores.Size = new System.Drawing.Size(68, 68);
             this.optJugadores.Text = "Jugadores";
+            this.optJugadores.Click += new System.EventHandler(this.optJugadores_Click);
             // 
             // optArbitros
             // 
@@ -105,6 +108,7 @@
             this.optArbitros.Name = "optArbitros";
             this.optArbitros.Size = new System.Drawing.Size(68, 68);
             this.optArbitros.Text = "Arbitros";
+            this.optArbitros.Click += new System.EventHandler(this.optArbitros_Click);
             // 
             // optPaises
             // 
@@ -115,6 +119,7 @@
             this.optPaises.Name = "optPaises";
             this.optPaises.Size = new System.Drawing.Size(68, 68);
             this.optPaises.Text = "Paises";
+            this.optPaises.Click += new System.EventHandler(this.optPaises_Click);
             // 
             // optHoteles
             // 
@@ -125,6 +130,7 @@
             this.optHoteles.Name = "optHoteles";
             this.optHoteles.Size = new System.Drawing.Size(68, 68);
             this.optHoteles.Text = "Hoteles";
+            this.optHoteles.Click += new System.EventHandler(this.optHoteles_Click);
             // 
             // optRevervaciones
             // 
@@ -135,16 +141,18 @@
             this.optRevervaciones.Name = "optRevervaciones";
             this.optRevervaciones.Size = new System.Drawing.Size(68, 68);
             this.optRevervaciones.Text = "Revervaciones";
+            this.optRevervaciones.Click += new System.EventHandler(this.optRevervaciones_Click);
             // 
-            // toolStripButton6
+            // optSalas
             // 
-            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(68, 68);
-            this.toolStripButton6.Text = "toolStripButton6";
+            this.optSalas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.optSalas.Image = ((System.Drawing.Image)(resources.GetObject("optSalas.Image")));
+            this.optSalas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.optSalas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.optSalas.Name = "optSalas";
+            this.optSalas.Size = new System.Drawing.Size(68, 68);
+            this.optSalas.Text = "Salas";
+            this.optSalas.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // optPartidas
             // 
@@ -155,6 +163,7 @@
             this.optPartidas.Name = "optPartidas";
             this.optPartidas.Size = new System.Drawing.Size(68, 68);
             this.optPartidas.Text = "Partidas";
+            this.optPartidas.Click += new System.EventHandler(this.optPartidas_Click);
             // 
             // optMovimientos
             // 
@@ -165,16 +174,29 @@
             this.optMovimientos.Name = "optMovimientos";
             this.optMovimientos.Size = new System.Drawing.Size(68, 68);
             this.optMovimientos.Text = "Movimientos";
+            this.optMovimientos.Click += new System.EventHandler(this.optMovimientos_Click);
             // 
-            // optCampionatos
+            // optCampeonatos
             // 
-            this.optCampionatos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.optCampionatos.Image = ((System.Drawing.Image)(resources.GetObject("optCampionatos.Image")));
-            this.optCampionatos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.optCampionatos.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.optCampionatos.Name = "optCampionatos";
-            this.optCampionatos.Size = new System.Drawing.Size(68, 68);
-            this.optCampionatos.Text = "Campionatos";
+            this.optCampeonatos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.optCampeonatos.Image = ((System.Drawing.Image)(resources.GetObject("optCampeonatos.Image")));
+            this.optCampeonatos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.optCampeonatos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.optCampeonatos.Name = "optCampeonatos";
+            this.optCampeonatos.Size = new System.Drawing.Size(68, 68);
+            this.optCampeonatos.Text = "Campeonatos";
+            this.optCampeonatos.Click += new System.EventHandler(this.optCampionatos_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(68, 68);
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -188,6 +210,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -213,9 +236,10 @@
         private System.Windows.Forms.ToolStripButton optPaises;
         private System.Windows.Forms.ToolStripButton optHoteles;
         private System.Windows.Forms.ToolStripButton optRevervaciones;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ToolStripButton optSalas;
         private System.Windows.Forms.ToolStripButton optPartidas;
         private System.Windows.Forms.ToolStripButton optMovimientos;
-        private System.Windows.Forms.ToolStripButton optCampionatos;
+        private System.Windows.Forms.ToolStripButton optCampeonatos;
+        private System.Windows.Forms.ToolStripButton btnSalir;
     }
 }

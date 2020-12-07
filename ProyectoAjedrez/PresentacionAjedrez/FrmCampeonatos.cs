@@ -25,6 +25,7 @@ namespace PresentacionAjedrez
         private void pbSalir_Click(object sender, EventArgs e)
         {
             Close();
+            FrmMenuPrincipal.x = 0;
         }
 
         public void cargarDatos(string busqueda)

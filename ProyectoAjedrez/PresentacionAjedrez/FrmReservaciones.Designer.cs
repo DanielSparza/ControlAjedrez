@@ -176,7 +176,8 @@
             this.pbSalir.Location = new System.Drawing.Point(1189, 1);
             this.pbSalir.Margin = new System.Windows.Forms.Padding(4);
             this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(43, 39);
+            this.pbSalir.Size = new System.Drawing.Size(32, 32);
+            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSalir.TabIndex = 27;
             this.pbSalir.TabStop = false;
             this.pbSalir.Click += new System.EventHandler(this.pbSalir_Click);

@@ -20,6 +20,7 @@ namespace PresentacionAjedrez
         private void pbSalir_Click(object sender, EventArgs e)
         {
             Close();
+            FrmMenuPrincipal.x = 0;
         }
 
         private void FrmArbitro_Load(object sender, EventArgs e)

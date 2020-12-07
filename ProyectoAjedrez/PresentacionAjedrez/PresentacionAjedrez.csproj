@@ -87,11 +87,35 @@
     <Compile Include="FrmHotel.Designer.cs">
       <DependentUpon>FrmHotel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmJugadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJugadores.Designer.cs">
+      <DependentUpon>FrmJugadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJugadoresAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJugadoresAdd.Designer.cs">
+      <DependentUpon>FrmJugadoresAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMenuPrincipal.Designer.cs">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovimientos.Designer.cs">
+      <DependentUpon>FrmMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovimientosAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovimientosAdd.Designer.cs">
+      <DependentUpon>FrmMovimientosAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPais.cs">
       <SubType>Form</SubType>
@@ -104,6 +128,18 @@
     </Compile>
     <Compile Include="FrmPaisAdd.Designer.cs">
       <DependentUpon>FrmPaisAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPartidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPartidas.Designer.cs">
+      <DependentUpon>FrmPartidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPartidasAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPartidasAdd.Designer.cs">
+      <DependentUpon>FrmPartidasAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReservaciones.cs">
       <SubType>Form</SubType>
@@ -156,14 +192,32 @@
     <EmbeddedResource Include="FrmHotel.resx">
       <DependentUpon>FrmHotel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmJugadores.resx">
+      <DependentUpon>FrmJugadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJugadoresAdd.resx">
+      <DependentUpon>FrmJugadoresAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovimientos.resx">
+      <DependentUpon>FrmMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovimientosAdd.resx">
+      <DependentUpon>FrmMovimientosAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPais.resx">
       <DependentUpon>FrmPais.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPaisAdd.resx">
       <DependentUpon>FrmPaisAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPartidas.resx">
+      <DependentUpon>FrmPartidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPartidasAdd.resx">
+      <DependentUpon>FrmPartidasAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReservaciones.resx">
       <DependentUpon>FrmReservaciones.cs</DependentUpon>

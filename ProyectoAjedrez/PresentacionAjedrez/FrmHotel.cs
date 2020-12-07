@@ -53,6 +53,7 @@ namespace PresentacionAjedrez
             if (rs == DialogResult.Yes)
             {
                 r = mh.EliminarHotel(h);
+                Actualizar();
             }
         }
 
@@ -94,6 +95,7 @@ namespace PresentacionAjedrez
         private void pbSalir_Click(object sender, EventArgs e)
         {
             Close();
+            FrmMenuPrincipal.x = 0;
         }
     }
 }

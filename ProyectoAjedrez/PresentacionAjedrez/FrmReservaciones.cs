@@ -34,6 +34,7 @@ namespace PresentacionAjedrez
         private void pbSalir_Click(object sender, EventArgs e)
         {
             Close();
+            FrmMenuPrincipal.x = 0;
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)

@@ -41,6 +41,7 @@ namespace PresentacionAjedrez
             if (rs == DialogResult.Yes)
             {
                 r = ms.EliminarSala(s);
+                Actualizar();
             }
         }
         public void ActualizarDatos()
@@ -82,6 +83,7 @@ namespace PresentacionAjedrez
         private void pbSalir_Click(object sender, EventArgs e)
         {
             Close();
+            FrmMenuPrincipal.x = 0;
         }
 
         public void Generardatos(int fila)

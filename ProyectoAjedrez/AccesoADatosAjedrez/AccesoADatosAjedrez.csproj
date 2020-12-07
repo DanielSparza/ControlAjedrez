@@ -40,7 +40,10 @@
     <Compile Include="ConexionBD.cs" />
     <Compile Include="ConexionCampeonato.cs" />
     <Compile Include="ConexionHoteles.cs" />
+    <Compile Include="ConexionJugadores.cs" />
+    <Compile Include="ConexionMovimientos.cs" />
     <Compile Include="ConexionPais.cs" />
+    <Compile Include="ConexionPartidas.cs" />
     <Compile Include="ConexionReservacion.cs" />
     <Compile Include="ConexionSalas.cs" />
     <Compile Include="Program.cs" />

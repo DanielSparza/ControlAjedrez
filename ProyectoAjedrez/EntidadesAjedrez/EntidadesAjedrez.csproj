@@ -37,9 +37,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntidadCampeonato.cs" />
+    <Compile Include="EntidadColor.cs" />
     <Compile Include="EntidadHoteles.cs" />
+    <Compile Include="EntidadJugadores.cs" />
+    <Compile Include="EntidadMovimientos.cs" />
     <Compile Include="EntidadPais.cs" />
     <Compile Include="EntidadArbitro.cs" />
+    <Compile Include="EntidadPartidas.cs" />
+    <Compile Include="EntidadPersonas.cs" />
     <Compile Include="EntidadReservacion.cs" />
     <Compile Include="EntidadSalas.cs" />
     <Compile Include="Program.cs" />

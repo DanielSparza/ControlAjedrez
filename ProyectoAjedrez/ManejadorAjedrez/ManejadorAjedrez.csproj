@@ -39,7 +39,10 @@
     <Compile Include="ManejadorArbitro.cs" />
     <Compile Include="ManejadorCampeonato.cs" />
     <Compile Include="ManejadorHoteles.cs" />
+    <Compile Include="ManejadorJugadores.cs" />
+    <Compile Include="ManejadorMovimientos.cs" />
     <Compile Include="ManejadorPais.cs" />
+    <Compile Include="ManejadorPartidas.cs" />
     <Compile Include="ManejadorReservaciones.cs" />
     <Compile Include="ManejadorSalas.cs" />
     <Compile Include="Program.cs" />

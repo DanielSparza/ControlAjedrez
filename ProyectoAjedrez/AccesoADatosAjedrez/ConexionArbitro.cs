@@ -15,7 +15,7 @@ namespace AccesoADatosAjedrez
 
         public string guardarArbitro(EntidadArbitro arbitro)
         {
-            return c.Comando(string.Format("insert into arbitro values('{0}')", arbitro.IdArbitro));
+            return c.Comando(string.Format("insert into arbitros values('{0}')", arbitro.IdArbitro));
         }
 
         public string guardarPersona(EntidadArbitro arbitro)
@@ -32,7 +32,7 @@ namespace AccesoADatosAjedrez
 
         public string eliminarArbitro(EntidadArbitro arbitro)
         {
-            return c.Comando(string.Format("delete from arbitro where IdArbitro = '{0}'", arbitro.IdArbitro));
+            return c.Comando(string.Format("delete from arbitros where IdArbitro = '{0}'", arbitro.IdArbitro));
         }
 
         public string eliminarPersona(EntidadArbitro arbitro)
@@ -42,18 +42,18 @@ namespace AccesoADatosAjedrez
 
         public string eliminarCampeonato(EntidadArbitro arbitro)
         {
-            return c.Comando(string.Format("delete from campeonato where FkPersona = '{0}'", arbitro.IdArbitro));
+            return c.Comando(string.Format("delete from campeonatos where FkPersona = '{0}'", arbitro.IdArbitro));
         }
 
         public DataSet mostrarArbitro(string busqueda)
         {
-            return c.Mostrar(string.Format("select p.IdPersona as 'Código', p.Nombre, p.APaterno as 'Ap. Paterno', p.AMaterno as 'Ap. Materno', p.Direccion as Dirección, p.Telefono as Teléfono, c.Nombre as País from personas p, pais c where p.FkPais = c.IdPais and p.Nombre like '%{0}%'",
+            return c.Mostrar(string.Format("select p.IdPersona as 'Código', p.Nombre, p.APaterno as 'Apellido Paterno', p.AMaterno as 'Apellido Materno', p.Direccion as Dirección, p.Telefono as Teléfono, c.Nombre as País from personas p, paises c , arbitros a where p.FkPais = c.IdPais and p.IdPersona = a.IdArbitro and p.Nombre like '%{0}%'",
                 busqueda), "personas");
         }
 
         public DataSet mostrarPais()
         {
-            return c.Mostrar("select Nombre from pais", "pais");
+            return c.Mostrar("select Nombre from paises", "paises");
         }
 
         public int obtenerIdPais(string pais)
@@ -61,8 +61,8 @@ namespace AccesoADatosAjedrez
             try
             {
                 DataTable dt = new DataTable();
-                dt = c.Mostrar(string.Format("select IdPais from pais where Nombre = '{0}'",
-                    pais), "pais").Tables[0];
+                dt = c.Mostrar(string.Format("select IdPais from paises where Nombre = '{0}'",
+                    pais), "paises").Tables[0];
 
                 DataRow r = dt.Rows[0];
                 return int.Parse(r["IdPais"].ToString());

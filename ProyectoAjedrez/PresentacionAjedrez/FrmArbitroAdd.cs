@@ -21,7 +21,7 @@ namespace PresentacionAjedrez
         {
             InitializeComponent();
             ma = new ManejadorArbitro();
-
+            txtCodigo.Enabled = false;
             txtCodigo.Text = arbitro.IdArbitro;
             txtNombre.Text = arbitro.Nombre;
             txtApPaterno.Text = arbitro.ApPaterno;
