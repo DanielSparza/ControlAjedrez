@@ -68,10 +68,10 @@ namespace PresentacionAjedrez
             ep.Entrada = int.Parse(dgvPartidas.Rows[fila].Cells[2].Value.ToString());
             ep.FkArbitro = dgvPartidas.Rows[fila].Cells[3].Value.ToString();
 
-            ep.FkSala = int.Parse(dgvPartidas.Rows[fila].Cells[5].Value.ToString());
+            ep.FkSala = int.Parse(dgvPartidas.Rows[fila].Cells[4].Value.ToString());
 
-            ec.FkJugador = dgvPartidas.Rows[fila].Cells[7].Value.ToString();
-            ec.Color = dgvPartidas.Rows[fila].Cells[11].Value.ToString();
+            ec.FkJugador = dgvPartidas.Rows[fila].Cells[6].Value.ToString();
+            ec.Color = dgvPartidas.Rows[fila].Cells[10].Value.ToString();
         }
 
         public void Actualizar()

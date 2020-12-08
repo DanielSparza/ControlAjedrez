@@ -72,8 +72,8 @@ namespace PresentacionAjedrez
                     else
                     {
                         string r = mp.Actualizarpartida(new EntidadPartidas(txtPartida.Text, dtpJornada.Text, int.Parse(txtEntradas.Text), int.Parse(txtSala.Text), txtArbitro.Text));
-                        r = mp.Actualizarcolor(new EntidadColor(txtPartida.Text, txtBlancas.Text, "Blancas"));
                         r = mp.Actualizarcolor(new EntidadColor(txtPartida.Text, txtNegras.Text, "Negras"));
+                        r = mp.Actualizarcolor(new EntidadColor(txtPartida.Text, txtBlancas.Text, "Blancas"));
                         Close();
                     }
                 }

@@ -43,14 +43,15 @@ namespace AccesoADatosAjedrez
 
         public string ActualizarColor(EntidadColor ec)
         {
-            return c.Comando(string.Format("UPDATE piezas SET FkJugador = '{0}', Color = '{1}' WHERE FkPartida = '{2}'",
+            return c.Comando(string.Format("UPDATE piezas SET FkJugador = '{0}' WHERE Color = '{1}' AND FkPartida = '{2}'",
                 ec.FkJugador, ec.Color, ec.FkPartida));
         }
 
         public DataSet Mostrar(string partida)
         {
             //return c.Mostrar(string.Format("SELECT pa.IdPartida AS Partida, pa.Jornada, pa.Entrada, pa.FkSala AS Sala, pa.FkArbitro AS Arbitro, pi.FkJugador AS Jugador, pi.Color FROM partidas pa, piezas pi WHERE IdPartida LIKE '%{0}%'", partida), "partidas");
-            return c.Mostrar(string.Format("SELECT pa.Idpartida AS 'Partida', pa.Jornada, pa.Entrada, pa.fkarbitro AS 'Codigo Arbitro',(SELECT p.nombre FROM personas p, arbitros a, partidas pa where a.idarbitro = p.idpersona AND a.idarbitro = pa.fkarbitro) AS 'Arbitro', Pa.fkSala AS 'Sala', H.Nombre AS 'Nombre Hotel', p.idpersona AS 'Codigo Jugador', p.Nombre AS 'Nombre Jugador', p.Apaterno AS 'Apellido Paterno', p.Amaterno AS 'Apellido Materno', pie.Color FROM partidas pa, personas p, piezas pie, jugadores j, salas s, hoteles h WHERE pa.IdPartida = pie.FkPartida AND pie.FkJugador = j.IdJugador AND j.idjugador = p.idpersona AND pa.fksala = s.IdSala AND s.FkHotel = h.IdHotel AND IdPartida LIKE '%{0}%'", partida), "partida");
+            //return c.Mostrar(string.Format("SELECT pa.Idpartida AS 'Partida', pa.Jornada, pa.Entrada, pa.fkarbitro AS 'Codigo Arbitro',(SELECT p.nombre FROM personas p, arbitros a, partidas pa where a.idarbitro = p.idpersona AND a.idarbitro = pa.fkarbitro) AS 'Arbitro', Pa.fkSala AS 'Sala', H.Nombre AS 'Nombre Hotel', p.idpersona AS 'Codigo Jugador', p.Nombre AS 'Nombre Jugador', p.Apaterno AS 'Apellido Paterno', p.Amaterno AS 'Apellido Materno', pie.Color FROM partidas pa, personas p, piezas pie, jugadores j, salas s, hoteles h WHERE pa.IdPartida = pie.FkPartida AND pie.FkJugador = j.IdJugador AND j.idjugador = p.idpersona AND pa.fksala = s.IdSala AND s.FkHotel = h.IdHotel AND IdPartida LIKE '%{0}%'", partida), "partida");
+            return c.Mostrar(string.Format("SELECT pa.Idpartida AS 'Partida', pa.Jornada, pa.Entrada, pa.fkarbitro AS 'Codigo Arbitro', Pa.fkSala AS 'Sala', H.Nombre AS 'Nombre Hotel', p.idpersona AS 'Codigo Jugador', p.Nombre AS 'Nombre Jugador', p.Apaterno AS 'Apellido Paterno', p.Amaterno AS 'Apellido Materno', pie.Color FROM partidas pa, personas p, piezas pie, jugadores j, salas s, hoteles h WHERE pa.IdPartida = pie.FkPartida AND pie.FkJugador = j.IdJugador AND j.idjugador = p.idpersona AND pa.fksala = s.IdSala AND s.FkHotel = h.IdHotel AND IdPartida LIKE '%{0}%'", partida), "partida");
         }
 
         public DataSet MostrarId(string partida)
