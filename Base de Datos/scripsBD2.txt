@@ -5,19 +5,19 @@ CREATE TABLE hoteles(IdHotel int PRIMARY KEY AUTO_INCREMENT, Nombre VARCHAR(100)
 Direccion VARCHAR(100), Telefono VARCHAR(20));
 
 CREATE TABLE salas(IdSala int PRIMARY KEY AUTO_INCREMENT, Capacidad int,
-Medios VARCHAR(100), FkHotel int, FOREIGN KEY(FkHotel) REFERENCES hotel(IdHotel));
+Medios VARCHAR(100), FkHotel int, FOREIGN KEY(FkHotel) REFERENCES hoteles(IdHotel));
 
 CREATE TABLE paises(IdPais int PRIMARY KEY AUTO_INCREMENT, Nombre VARCHAR(100), NClubes int);
 
 CREATE TABLE personas(IdPersona VARCHAR(8) PRIMARY KEY, Nombre VARCHAR(50),
 APaterno VARCHAR(50), AMaterno VARCHAR(50), Direccion VARCHAR(100), Telefono VARCHAR(20),
-FkPais int, FOREIGN KEY(FkPais) REFERENCES pais(IdPais));
+FkPais int, FOREIGN KEY(FkPais) REFERENCES paises(IdPais));
 
 CREATE TABLE campeonatos(FkPersona VARCHAR(8), IdCampeonato int, PRIMARY KEY(FkPersona, IdCampeonato), Nombre VARCHAR(100),
 Tipo VARCHAR(100), FOREIGN KEY(FkPersona) REFERENCES personas(IdPersona));
 
 CREATE TABLE hospedajes(IdReserva int PRIMARY KEY AUTO_INCREMENT, FechaEntrada DATE,
-FechaSalida DATE, FkHotel int, FkPersona VARCHAR(8), FOREIGN KEY(FkHotel) REFERENCES hotel(IdHotel),
+FechaSalida DATE, FkHotel int, FkPersona VARCHAR(8), FOREIGN KEY(FkHotel) REFERENCES hoteles(IdHotel),
 FOREIGN KEY(FkPersona) REFERENCES personas(IdPersona));
 
 CREATE TABLE jugadores(IdJugador VARCHAR(8) PRIMARY KEY, Nivel VARCHAR(100), FOREIGN KEY(IdJugador) REFERENCES personas(IdPersona));
@@ -25,11 +25,11 @@ CREATE TABLE jugadores(IdJugador VARCHAR(8) PRIMARY KEY, Nivel VARCHAR(100), FOR
 CREATE TABLE arbitros(IdArbitro VARCHAR(8) PRIMARY KEY, FOREIGN KEY(IdArbitro) REFERENCES personas(IdPersona));
 
 CREATE TABLE partidas(IdPartida VARCHAR(8) PRIMARY KEY, Jornada datetime, Entrada int,
-FkSala int, FkArbitro VARCHAR(8), FOREIGN KEY(FkSala) REFERENCES sala(IdSala),
-FOREIGN KEY(FkArbitro) REFERENCES arbitro(IdArbitro));
+FkSala int, FkArbitro VARCHAR(8), FOREIGN KEY(FkSala) REFERENCES salas(IdSala),
+FOREIGN KEY(FkArbitro) REFERENCES arbitros(IdArbitro));
 
 CREATE TABLE piezas(FkPartida VARCHAR(8), FkJugador VARCHAR(8), Color VARCHAR(50), PRIMARY KEY(FkPartida, FkJugador),
-FOREIGN KEY(FkPartida) REFERENCES partida(IdPartida), FOREIGN KEY(FkJugador) REFERENCES jugador(IdJugador));
+FOREIGN KEY(FkPartida) REFERENCES partidas(IdPartida), FOREIGN KEY(FkJugador) REFERENCES jugadores(IdJugador));
 
 CREATE TABLE movimientos(FkPartida VARCHAR(8), Numero int, Blancas VARCHAR(100), Negras VARCHAR(100), Comentario VARCHAR(100),
-PRIMARY KEY(FkPartida, Numero), FOREIGN KEY(FkPartida) REFERENCES partida(IdPartida));
+PRIMARY KEY(FkPartida, Numero), FOREIGN KEY(FkPartida) REFERENCES partidas(IdPartida));

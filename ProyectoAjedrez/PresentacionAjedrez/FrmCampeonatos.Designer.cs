@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCampeonatos));
             this.btnActuaizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -53,8 +54,8 @@
             this.btnActuaizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActuaizar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActuaizar.ForeColor = System.Drawing.Color.White;
-            this.btnActuaizar.Location = new System.Drawing.Point(988, 305);
-            this.btnActuaizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActuaizar.Location = new System.Drawing.Point(988, 263);
+            this.btnActuaizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnActuaizar.Name = "btnActuaizar";
             this.btnActuaizar.Size = new System.Drawing.Size(160, 49);
             this.btnActuaizar.TabIndex = 27;
@@ -70,8 +71,8 @@
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(988, 235);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNuevo.Location = new System.Drawing.Point(988, 193);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(160, 49);
             this.btnNuevo.TabIndex = 26;
@@ -89,7 +90,7 @@
             this.dtgCampeonatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -98,7 +99,7 @@
             this.dtgCampeonatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -106,14 +107,22 @@
             this.dtgCampeonatos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgCampeonatos.GridColor = System.Drawing.Color.White;
             this.dtgCampeonatos.Location = new System.Drawing.Point(16, 123);
-            this.dtgCampeonatos.Margin = new System.Windows.Forms.Padding(4);
+            this.dtgCampeonatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgCampeonatos.Name = "dtgCampeonatos";
             this.dtgCampeonatos.ReadOnly = true;
             this.dtgCampeonatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgCampeonatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgCampeonatos.RowHeadersVisible = false;
             this.dtgCampeonatos.RowTemplate.Height = 24;
             this.dtgCampeonatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgCampeonatos.Size = new System.Drawing.Size(953, 411);
+            this.dtgCampeonatos.Size = new System.Drawing.Size(953, 376);
             this.dtgCampeonatos.TabIndex = 24;
             this.dtgCampeonatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCampeonatos_CellClick);
             // 
@@ -124,7 +133,7 @@
             this.txtBuscar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.ForeColor = System.Drawing.Color.Black;
             this.txtBuscar.Location = new System.Drawing.Point(149, 62);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(522, 35);
             this.txtBuscar.TabIndex = 23;
@@ -149,8 +158,8 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(988, 374);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Location = new System.Drawing.Point(988, 332);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(160, 49);
             this.btnEliminar.TabIndex = 21;
@@ -163,7 +172,7 @@
             this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
             this.pbSalir.Location = new System.Drawing.Point(1105, 6);
-            this.pbSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbSalir.Name = "pbSalir";
             this.pbSalir.Size = new System.Drawing.Size(32, 32);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -178,7 +187,7 @@
             this.panelTitulo.Controls.Add(this.pbSalir);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(0, 0);
-            this.panelTitulo.Margin = new System.Windows.Forms.Padding(4);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTitulo.Name = "panelTitulo";
             this.panelTitulo.Size = new System.Drawing.Size(1164, 49);
             this.panelTitulo.TabIndex = 25;
@@ -191,16 +200,16 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(15, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 35);
+            this.label1.Size = new System.Drawing.Size(213, 35);
             this.label1.TabIndex = 28;
-            this.label1.Text = "Campionatos";
+            this.label1.Text = "Campeonatos";
             // 
             // FrmCampeonatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1164, 556);
+            this.ClientSize = new System.Drawing.Size(1164, 512);
             this.ControlBox = false;
             this.Controls.Add(this.btnActuaizar);
             this.Controls.Add(this.btnNuevo);
@@ -209,8 +218,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.panelTitulo);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCampeonatos";

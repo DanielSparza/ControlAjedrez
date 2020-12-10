@@ -168,9 +168,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(15, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(334, 35);
+            this.label6.Size = new System.Drawing.Size(343, 35);
             this.label6.TabIndex = 44;
-            this.label6.Text = "Registro Campionatos";
+            this.label6.Text = "Registro Campeonatos";
             // 
             // cmbTipo
             // 

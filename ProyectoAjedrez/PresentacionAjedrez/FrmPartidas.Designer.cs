@@ -93,6 +93,7 @@
             this.txtPartida.Name = "txtPartida";
             this.txtPartida.Size = new System.Drawing.Size(576, 34);
             this.txtPartida.TabIndex = 1;
+            this.txtPartida.TextChanged += new System.EventHandler(this.txtPartida_TextChanged);
             // 
             // label2
             // 

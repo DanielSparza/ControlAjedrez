@@ -78,5 +78,10 @@ namespace PresentacionAjedrez
         {
             dgvPartidas.DataSource = mp.Mostrar(txtPartida.Text).Tables[0];
         }
+
+        private void txtPartida_TextChanged(object sender, EventArgs e)
+        {
+            Actualizar();
+        }
     }
 }

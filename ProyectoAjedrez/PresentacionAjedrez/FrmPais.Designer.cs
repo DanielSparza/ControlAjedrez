@@ -79,7 +79,7 @@
             this.dtgPais.RowHeadersVisible = false;
             this.dtgPais.RowTemplate.Height = 24;
             this.dtgPais.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPais.Size = new System.Drawing.Size(651, 398);
+            this.dtgPais.Size = new System.Drawing.Size(651, 362);
             this.dtgPais.TabIndex = 10;
             this.dtgPais.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgPais_CellClick);
             // 
@@ -200,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(872, 558);
+            this.ClientSize = new System.Drawing.Size(872, 517);
             this.ControlBox = false;
             this.Controls.Add(this.btnActuaizar);
             this.Controls.Add(this.btnNuevo);
